@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tobey Maguire — MovieSerna</title>
+    <link rel="stylesheet" href="Styles.css" />
+</head>
+<body>
+
+    <!-- ==============================
+         NAVBAR
+         Flexbox: logo ← → links
+    ============================== -->
+    <nav class="navbar">
+        <span class="logo"><span>M</span>MovieSerna</span>
+        <ul>
+            <li><a href="pelicula.html"> Películas</a></li>
+            <li><a href="actor.html" class="activo"> Actores</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- ==============================
+         CONTENIDO
+    ============================== -->
+    <div class="contenedor">
+
+        <!-- Migas de pan -->
+        <div class="breadcrumb">
+            <a href="#">Inicio</a>
+            <span>›</span>
+            <a href="#">Actores</a>
+            <span>›</span>
+            Tobey Maguire
+        </div>
+
+        <!--
+            TARJETA DEL ACTOR — Flexbox
+            · Escritorio: foto izq | info der
+            · Móvil:      foto arriba, info abajo
+        -->
+        <div class="actor-card">
+
+            <!-- HIJO 1: Foto + stat -->
+            <div class="actor-foto-wrap">
+                <img
+                    class="actor-foto"
+                    src="https://media.themoviedb.org/t/p/w600_and_h900_face/s6PwSvq6gC7PGEjIku69tPbvR8M.jpg"
+                    alt="Foto de Tobey Maguire"
+                />
+                <!-- Pequeña estadística debajo de la foto -->
+                <div class="actor-stat">
+                    <strong>35+</strong>
+                    películas
+                </div>
+            </div>
+
+            <!-- HIJO 2: Info del actor -->
+            <div class="actor-info">
+
+                <p class="actor-profesion">Actor · Productor</p>
+                <h1>Tobey Maguire</h1>
+
+                <!-- Chips rápidos -->
+                <div class="metadatos">
+                    <span class="chip-anio">n. 1975</span>
+                    <span class="chip">Santa Monica, CA</span>
+                    <span class="chip">🇺🇸 Estadounidense</span>
+                </div>
+
+                <hr class="separador" />
+
+                <p class="actor-bio">
+                    Tobias Vincent Maguire es un actor y productor estadounidense conocido
+                    principalmente por interpretar a Peter Parker / Spider-Man en la trilogía
+                    original de Sam Raimi. Con más de tres décadas de carrera, ha demostrado
+                    su versatilidad en dramas como <em>The Cider House Rules</em> y
+                    <em>Seabiscuit</em>, así como en el thriller biográfico
+                    <em>Pawn Sacrifice</em>, donde interpretó al genio del ajedrez Bobby Fischer.
+                </p>
+
+                <!-- Botones -->
+                <div class="botones">
+                    <button class="btn btn-principal">🎬 Ver Filmografía</button>
+                    <button class="btn btn-secundario">☆ Guardar actor</button>
+                </div>
+
+            </div><!-- /actor-info -->
+        </div><!-- /actor-card -->
+
+
+        <!--
+            TARJETAS DE DATOS
+            Flexbox: datos personales | filmografía (lado a lado)
+            En móvil: columna (ver @media)
+        -->
+        <div class="tarjetas-grid">
+
+            <!-- Tarjeta 1: Datos personales -->
+            <div class="tarjeta">
+                <div class="tarjeta-header">
+                    <h2>Datos Personales</h2>
+                </div>
+
+                <ul class="lista-datos">
+                    <li>
+                        <span class="dato-clave">Nombre real</span>
+                        <span class="dato-valor">Tobias Vincent Maguire</span>
+                    </li>
+                    <li>
+                        <span class="dato-clave">Nacimiento</span>
+                        <span class="dato-valor">27 de junio de 1975</span>
+                    </li>
+                    <li>
+                        <span class="dato-clave">Lugar</span>
+                        <span class="dato-valor">Santa Monica, California</span>
+                    </li>
+                    <li>
+                        <span class="dato-clave">Actividad</span>
+                        <span class="dato-valor">1989 – presente</span>
+                    </li>
+                    <li>
+                        <span class="dato-clave">Conocido por</span>
+                        <span class="dato-valor">Spider-Man (trilogía Raimi)</span>
+                    </li>
+                    <li>
+                        <span class="dato-clave">Premios</span>
+                        <span class="dato-valor">Saturn Award, MTV Movie Award</span>
+                    </li>
+                    <li>
+                        <span class="dato-clave">Productora</span>
+                        <span class="dato-valor">Material Pictures</span>
+                    </li>
+                    <li>
+                        <span class="dato-clave">Géneros</span>
+                        <span class="dato-valor">Acción, Drama, Thriller</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Tarjeta 2: Filmografía -->
+            <div class="tarjeta">
+                <div class="tarjeta-header">
+                    <h2>Películas Destacadas</h2>
+                </div>
+
+                <ul class="lista-peliculas">
+
+                    <li class="pelicula-item">
+                        <span class="anio">2021</span>
+                        <div class="pelicula-detalle">
+                            <span class="pelicula-nombre">Spider-Man: No Way Home</span>
+                            <span class="personaje">Peter Parker #2</span>
+                        </div>
+                        <span class="flecha">›</span>
+                    </li>
+
+                    <li class="pelicula-item">
+                        <span class="anio">2014</span>
+                        <div class="pelicula-detalle">
+                            <span class="pelicula-nombre">Pawn Sacrifice</span>
+                            <span class="personaje">Bobby Fischer</span>
+                        </div>
+                        <span class="flecha">›</span>
+                    </li>
+
+                    <li class="pelicula-item">
+                        <span class="anio">2013</span>
+                        <div class="pelicula-detalle">
+                            <span class="pelicula-nombre">El Gran Gatsby</span>
+                            <span class="personaje">Nick Carraway</span>
+                        </div>
+                        <span class="flecha">›</span>
+                    </li>
+
+                    <li class="pelicula-item">
+                        <span class="anio">2007</span>
+                        <div class="pelicula-detalle">
+                            <span class="pelicula-nombre">Spider-Man 3</span>
+                            <span class="personaje">Peter Parker</span>
+                        </div>
+                        <span class="flecha">›</span>
+                    </li>
+
+                    <li class="pelicula-item">
+                        <span class="anio">2004</span>
+                        <div class="pelicula-detalle">
+                            <span class="pelicula-nombre">Spider-Man 2</span>
+                            <span class="personaje">Peter Parker</span>
+                        </div>
+                        <span class="flecha">›</span>
+                    </li>
+
+                    <li class="pelicula-item">
+                        <span class="anio">2003</span>
+                        <div class="pelicula-detalle">
+                            <span class="pelicula-nombre">Seabiscuit</span>
+                            <span class="personaje">Jeff (jockey)</span>
+                        </div>
+                        <span class="flecha">›</span>
+                    </li>
+
+                    <li class="pelicula-item">
+                        <span class="anio">2002</span>
+                        <div class="pelicula-detalle">
+                            <span class="pelicula-nombre">Spider-Man</span>
+                            <span class="personaje">Peter Parker</span>
+                        </div>
+                        <span class="flecha">›</span>
+                    </li>
+
+                    <li class="pelicula-item">
+                        <span class="anio">1999</span>
+                        <div class="pelicula-detalle">
+                            <span class="pelicula-nombre">The Cider House Rules</span>
+                            <span class="personaje">Homer Wells</span>
+                        </div>
+                        <span class="flecha">›</span>
+                    </li>
+
+                    <li class="pelicula-item">
+                        <span class="anio">1998</span>
+                        <div class="pelicula-detalle">
+                            <span class="pelicula-nombre">Pleasantville</span>
+                            <span class="personaje">David Wagner</span>
+                        </div>
+                        <span class="flecha">›</span>
+                    </li>
+
+                </ul>
+            </div><!-- /tarjeta filmografía -->
+
+        </div><!-- /tarjetas-grid -->
+
+    </div><!-- /contenedor -->
+
+
+    <footer class="footer">
+        <p>MovieSerna &copy;  Proyecto de <a href="#">Programacion Web </a></p>
+    </footer>
+
+</body>
+</html>
