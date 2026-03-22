@@ -1,0 +1,135 @@
+.html" class="activo"> Películas</a></li>
+            <li><a href="actor.html"> Actores</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- ==============================
+         CONTENIDO
+    ============================== -->
+    <div class="contenedor">
+
+        <!-- Migas de pan -->
+        <div class="breadcrumb">
+            <a href="#">Inicio</a>
+            <span>›</span>
+            <a href="#">Películas</a>
+            <span>›</span>
+            Spider-Man
+        </div>
+
+        <!--
+            TARJETA PRINCIPAL — Flexbox
+            · Escritorio: flex-direction: row  (póster | info)
+            · Móvil:      flex-direction: column  (cambiado en @media)
+        -->
+        <div class="pelicula-card">
+
+            <!-- HIJO 1: Póster -->
+            <div class="pelicula-poster">
+                <img
+                    src="https://media.themoviedb.org/t/p/w600_and_h900_face/589rUff9Ai272uMudb9Dn7k88Oa.jpg"
+                    alt="Póster de Spider-Man"
+                />
+            </div>
+
+            <!-- HIJO 2: Información -->
+            <div class="pelicula-info">
+
+                <h1>Spider-Man</h1>
+
+                <!-- Metadatos: flex-wrap + gap -->
+                <div class="metadatos">
+                    <span class="chip-anio">2002</span>
+                    <span class="chip">2h 1min</span>
+                    <span class="chip">PG-13</span>
+                    <span class="chip">EE.UU.</span>
+                    <span class="chip-rating">⭐ 7.3 / 10</span>
+                </div>
+
+                <p class="director">
+                    Dirigida por <strong>Sam Raimi</strong>
+                </p>
+
+                <hr class="separador" />
+
+                <!-- Sinopsis -->
+                <div>
+                    <p class="label-seccion">Sinopsis</p>
+                    <p class="sinopsis">
+                        Peter Parker, un tímido estudiante universitario de Queens, Nueva York,
+                        es mordido por una araña radiactiva durante una excursión escolar. La
+                        picadura le otorga poderes sobrehumanos: fuerza excepcional, la capacidad
+                        de trepar paredes y un sexto sentido que le advierte del peligro. Tras la
+                        trágica muerte de su tío Ben, Peter comprende que
+                        <em>"un gran poder conlleva una gran responsabilidad"</em> y decide
+                        convertirse en Spider-Man, enfrentándose al despiadado Duende Verde.
+                    </p>
+                </div>
+
+                <hr class="separador" />
+
+                <!-- Géneros: flex-wrap + gap -->
+                <div>
+                    <p class="label-seccion">Géneros</p>
+                    <div class="generos">
+                        <span class="tag-genero">Acción</span>
+                        <span class="tag-genero">Aventura</span>
+                        <span class="tag-genero">Superhéroes</span>
+                        <span class="tag-genero">Ciencia Ficción</span>
+                        <span class="tag-genero">Romance</span>
+                        <span class="tag-genero">Fantasía</span>
+                    </div>
+                </div>
+
+                <hr class="separador" />
+
+                <!-- Reparto -->
+                <div>
+                    <p class="label-seccion">Reparto principal</p>
+                    <div class="metadatos">
+                        <span class="chip">Tobey Maguire</span>
+                        <span class="chip">Kirsten Dunst</span>
+                        <span class="chip">Willem Dafoe</span>
+                        <span class="chip">James Franco</span>
+                        <span class="chip">Cliff Robertson</span>
+                    </div>
+                </div>
+
+                <hr class="separador" />
+
+                <!-- Botones -->
+                <div class="botones">
+                    <button class="btn btn-principal">▶ Ver Tráiler</button>
+                    <button class="btn btn-secundario">+ Mi Lista</button>
+                </div>
+
+            </div><!-- /pelicula-info -->
+        </div><!-- /pelicula-card -->
+
+    </div><!-- /contenedor -->
+
+
+    <footer class="footer">
+        <p>MovieSerna &copy;  Proyecto de <a href="#">Programacion Web </a></p>
+    </footer>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spider-Man (2002) — MovieSerna</title>
+    <link rel="stylesheet" href="Styles.css" />
+</head>
+<body>
+
+    <!-- ==============================
+         NAVBAR
+         Flexbox: logo ← → links
+    ============================== -->
+    <nav class="navbar">
+        <span class="logo"><span>M</span>MovieSerna</span>
+        <ul>
+            <li><a href="pelicula
